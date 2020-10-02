@@ -1,12 +1,7 @@
 
-function split(str){
-let arr = []; 
+function swaping(a ,b ){
+    [a , b ] = [1 ,  2 ] ;
+    console.log("a : " + a , "b : " + b  ); 
+    [b , a ] = [a , b ] ; 
 
-for(let i = 0 ; i< str.length  ; i++ ){
-    arr.push(str[i]);
 }
-
-return arr ; 
-}
-
-console.log(split("hello"));
