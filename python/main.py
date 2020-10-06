@@ -1,8 +1,5 @@
 
-x = [ 1 , 2, 4,5  , 5 , 6 ] 
+from math import *  
 
-print(x)
-
-t = (1 ,2 , 3 ,4 )
- 
+sqrt(4 ) 
 
