@@ -1,5 +1,8 @@
-txt = "Demo"
 
-x = txt.isidentifier()
+fruits = ["apple" , "banana" , "cherry"]
 
-print(x)
+cars = ["Ford" , "bmw" , "volvo"]
+
+fruits.extend(cars) 
+
+print(fruits)
