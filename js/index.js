@@ -1,28 +1,17 @@
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-function bSearch(array , x  ) { 
+var data = "id=5186431";
 
-    let n = array.length ; 
-    let beg = 0 ; 
-    let end = n - 1 ; 
-    let result = -1  ; 
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
 
-    while(beg <= end ){
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
+    console.log(this.responseText);
+  }
+});
 
-        mid = Math.floor((beg + end ) / 2 ) ; 
-        
-        if(array[mid] <= x ){
+xhr.open("POST", "https://olu.ninisite.com/Home/GetOnlineUsers");
+xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-            beg = mid + 1 ; 
-            result = mid ; 
-
-        }else {
-            end = mid-1 ; 
-
-        }
-    }
-    console.log("result : " , result );
-    return result ; 
- 
-}
-
-console.log(bSearch([1 , 2 , 3 , 4 , 5 ] ,  -10  )); 
+xhr.send(data);
