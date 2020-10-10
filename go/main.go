@@ -1,13 +1,10 @@
-package main
 
-import "fmt"
+package main  
 
-func main() {
-   var x float64
-   x = 20.0
-   fmt.Println(x)
-   fmt.Printf("x is of type %T\n", x)
-}
-func main(){
-	fmt.Print("hello world") 
+import "fmt" 
+
+func  main()  {
+   
+   fmt.Println("hi")
+ 
 }
