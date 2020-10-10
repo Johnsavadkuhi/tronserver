@@ -1,8 +1,4 @@
 
-fruits = ["apple" , "banana" , "cherry"]
 
-cars = ["Ford" , "bmw" , "volvo"]
+thiset = {"hello" , "hi", "mohammad" , "hi"}
 
-fruits.extend(cars) 
-
-print(fruits)
