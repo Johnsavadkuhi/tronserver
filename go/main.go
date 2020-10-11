@@ -7,9 +7,13 @@ import "fmt"
 
 func main(){
 
-	var m  int  = max(4 , 2  ) 
-	fmt.Println(m) 
-}
+	var a , b  int = 1 , 2
+	  
+	fmt.Println( a , b  ) 
+
+	a , b  = swap(a , b )
+	fmt.Print("a : " , a , "\n b : " ,  b  )
+ }
 
 func max(num1, num2 int) int {
 	/* local variable declaration */
@@ -21,6 +25,12 @@ func max(num1, num2 int) int {
 	   result = num2
 	}
 	return result 
+ }
+
+ func swap(a , b int  ) (int  , int  ) { 
+
+	return b , a  ; 
+
  }
 
  
