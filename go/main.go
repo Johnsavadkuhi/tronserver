@@ -1,11 +1,14 @@
 
 package main
 
+import "fmt" 
 
 
 
 func main(){
-fmt.Println(max(4 , 3 )) 
+
+	var m  int  = max(4 , 2  ) 
+	fmt.Println(m) 
 }
 
 func max(num1, num2 int) int {
@@ -19,3 +22,5 @@ func max(num1, num2 int) int {
 	}
 	return result 
  }
+
+ 
