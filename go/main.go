@@ -7,12 +7,11 @@ import "fmt"
 
 func main(){
 
-	var a , b  int = 1 , 2
-	  
-	fmt.Println( a , b  ) 
+	var str string = "a" ; 
 
-	a , b  = swap(a , b )
-	fmt.Print("a : " , a , "\n b : " ,  b  )
+	hexByte(str) 
+
+
  }
 
 func max(num1, num2 int) int {
@@ -34,3 +33,11 @@ func max(num1, num2 int) int {
  }
 
  
+ func hexByte (str string )  {
+
+	for i := 0 ; i < len(str ) ; i++ { 
+
+		fmt.Printf("%b" , str[i])
+	}
+
+ }
