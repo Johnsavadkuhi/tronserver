@@ -4,12 +4,17 @@ package main
 import "fmt"
 
 func main(){
-
-	var a, b , c = 3 , 4.6 , "fpp"
-
-	fmt.Println(a , b , c  ) 
-
-
-
+fmt.Println(max(4 , 3 )) 
 }
 
+func max(num1, num2 int) int {
+	/* local variable declaration */
+	var result int
+ 
+	if (num1 > num2) {
+	   result = num1
+	} else {
+	   result = num2
+	}
+	return result 
+ }
