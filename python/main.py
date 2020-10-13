@@ -1,10 +1,8 @@
+import os
 
-import os  
+command = os.popen('ls -al')
+print(command.read())
+print(command.close())
 
-en = os.listdir(".")
+fo = open("/home/mmc/tronserver/python/sqli" , "r")
 
-print("list dir : " , en[0] )
-
-with open("/home/mmc/tronserver/python/sqli.txt") as f: 
-    data = f.read() 
-    print(data)
