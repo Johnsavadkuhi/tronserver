@@ -1,10 +1,21 @@
 
 package main  
 
-import "fmt" 
+import (
+   "fmt"
+
+)
 
 func  main()  {
+
+   var str  string  
+   str = "4 " 
+
+   fmt.Println("hi" ,str )
    
-   fmt.Println("hi")
- 
+   var message string
+   message = fmt.Sprintf("Hi, %v. Welcome!","john" )
+   fmt.Println(message) 
+   
 }
+
