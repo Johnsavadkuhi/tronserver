@@ -1,11 +1,12 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const fs = require("fs") 
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+fs.rename('/home/mmc/tronserver/js/xx' , '/home/mmc/tronserver/js/x' , (err)=>{
+  if (err) throw err 
+   console.log("renamed complete");
+}) 
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+fs.stat('/home/mmc/tronserver/js/xx' , (err , stats ) => {
+  if (err ) throw err 
+
+  console.log(`stats : ${JSON.stringify(stats)}`);
 })
