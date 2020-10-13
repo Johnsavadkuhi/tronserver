@@ -7,11 +7,12 @@ import "fmt"
 
 func main(){
 
-	var str string = "a" ; 
+	var balance  = []float32 {1.2 ,3.5 , 4.4 , 5.4 , 3 } 
+	 
+	fmt.Println(balance) 
+	balance[5] = 44.4 
 
-	hexByte(str) 
-
-
+	fmt.Println(balance , balance[5] )  
  }
 
 func max(num1, num2 int) int {
