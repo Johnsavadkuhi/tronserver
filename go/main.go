@@ -1,21 +1,19 @@
 
-package main  
+package main 
+import "fmt"
+import "time"
 
-import (
-   "fmt"
 
-)
+func main() {
 
-func  main()  {
+   go display("hello")
+   display("*****************************")
+}
 
-   var str  string  
-   str = "4 " 
-
-   fmt.Println("hi" ,str )
-   
-   var message string
-   message = fmt.Sprintf("Hi, %v. Welcome!","john" )
-   fmt.Println(message) 
-   
+func display (str string) {
+   for w:= 0 ; w < 6 ; w++ {
+      time.Sleep(1000 * time.Millisecond)
+      fmt.Println(str) 
+   }
 }
 
