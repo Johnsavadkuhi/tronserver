@@ -6,3 +6,5 @@ console.log(x + y ) ;
 console.log(x - y  );
 
 console.log( 3 ** 5 );
+const fs  = require("fs") 
+
