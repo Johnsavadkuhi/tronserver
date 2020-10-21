@@ -1,14 +1,16 @@
 
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
+ char code [] =  "\xb8\x04\x00\x00\x02\xbf\x01\x00\x00\x00\x48\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xba\x0d\x00\x00\x00\x0f\x05\xb8\x01\x00\x00\x02\x48\x31\xff\x0f\x05" ; 
+// unsigned char code[] ="\xb8\x01\x00\x00\x02\x48\x31\xff\x0f\x05" ; 
+// unsigned char code [] =  "\xb8\x04\x00\x00\x02\xbf\x01\x48\xbe\xba\x0d\x0f\x05\xb8\x01\x02\x48\x31\xff\x0f\x05" ; 
+// char code[] = "\x31\xc0\xb0\x01\x31\xdb\xb3\x07\xcd\x80"; 
 
-int main(){
+int main()
+{
 
-//int 
-// float 
-// double 
-double x  = 5.98765789765678976 ; 
-printf("%f" , x) ; 
-
-return 0 ; 
+  int *ret; // a simple integer pointer pointing a address 
+	ret = (int *)&ret + 2; // change the address pointed by 
+	(*ret) = (int)code ; 
 
 }
