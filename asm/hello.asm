@@ -1,9 +1,10 @@
+; assembly x64 in mac os 
 global _main
  
  section .text 
 
  _main:
-    mov rax , 0x2000004
+    mov rax , 0x2000004 
     mov rdi , 1 
     mov rsi , str 
     mov rdx  , str.len 
