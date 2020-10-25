@@ -1,20 +1,16 @@
 
-const car ={
-
-    brand : "honda", 
-    
-    getBrand:function(){
-        
-        return this.brand ; 
-    }
-
+function getBrand(prefix){
+    console.log(prefix + this.brand); 
 }
 
-
-
-const bike = {
-    brand : "BMW" 
+let honda ={
+    brand : 'Honda' 
 }
+ let audi = {
+     brand : 'Audi' 
+ }
 
-console.log(car.getBrand.bind({brand:"ho"})() )
+//  getBrand.call(honda , "It is a ") 
+
+//  getBrand.call(audi , "It is an  ")
 
