@@ -1,12 +1,20 @@
+'use strict'
 
-const returnObject = () => ({key:"key"})
-
-console.log(returnObject()) ;
-
-
-const retObject2 = () =>{ 
-    return {key : "value"}
+const returnThis = function(){
+    return this ; 
 }
 
 
-console.log(retObject2());
+const obj1 = {
+    name : 'obj1', 
+    method : returnThis 
+}
+
+
+const obj2 = {
+    name : "obj2"
+}
+
+console.log(returnThis.apply(this,obj2 ) );
+
+console.log(returnThis()) ;
