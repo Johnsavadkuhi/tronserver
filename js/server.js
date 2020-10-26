@@ -1,16 +1,7 @@
-
-function getBrand(prefix){
-    console.log(prefix + this.brand); 
-}
-
-let honda ={
-    brand : 'Honda' 
-}
- let audi = {
-     brand : 'Audi' 
- }
-
-//  getBrand.call(honda , "It is a ") 
-
-//  getBrand.call(audi , "It is an  ")
-
+function insidious() {
+    var functionScoped = 'Outer declaration'; 1 if (true) {
+    var functionScoped = 'Inner declaration'; 2 }
+    console.log(functionScoped); 3
+      return functionScoped;
+    }
+    // prints 'Inner declaration' insidious();
