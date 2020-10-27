@@ -1,20 +1,13 @@
-'use strict'
+ 'use strict'
 
-const returnThis = function(){
-    return this ; 
+const GLOBAL_THIS = this 
+const retMe =  () =>  this 
+
+const obj = {
+    name : 'obj' , 
+    method : retMe 
+    
 }
 
-
-const obj1 = {
-    name : 'obj1', 
-    method : returnThis 
-}
-
-
-const obj2 = {
-    name : "obj2"
-}
-
-console.log(returnThis.apply(this,obj2 ) );
-
-console.log(returnThis()) ;
+console.log(obj.method() === GLOBAL_THIS);
+console.log(retMe() === GLOBAL_THIS);
